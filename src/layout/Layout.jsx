@@ -1,14 +1,19 @@
-import Header from '../header/Header'
-import SideBar from '../sideBar/SideBar'
-import { Outlet } from 'react-router-dom'
+import "../style/layout.css";
+import Header from "../header/Header";
+import SideBar from "../sideBar/SideBar";
+import { Outlet } from "react-router-dom";
 function Layout() {
   return (
-    <div>
-      <Header/>
-      <SideBar/>
-      <Outlet/>
+    <div className="layout">
+      <div className="side">
+        <SideBar />
+      </div>
+      <div className="head">
+        <Header />
+        <Outlet />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

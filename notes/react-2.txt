@@ -1,0 +1,39 @@
+- task 1*
+  .split the screen
+  .use padding instead of height
+  .handle the sideNav and header with the flex
+
+
+
+
+
+  
+server side . client side use
+question ?
+what is rerender?
+.When the data changes, React efficiently updates only the parts of your web page that need to change. 
+what is useoutlet?
+outlet > use to indicate that where the child root of parent should be render.
+useOutLet -> use to render the child root of parent root.
+react life cycle method?
+There are three categories of lifecycle methods: mounting, updating, and unmounting.
+the question that asked in random?
+what is client side routing?
+whats the difference between js and jsx?
+.JSX is a JavaScript syntax extension often used with React. JSX allows you to write HTML-like code in your JavaScript files, making it easier to create and    manage user interfaces in React. 
+
+
+folder structre of the react js, mainaly understand app.js and main.js
+useEffect
+useState
+react life cycle method
+difference  between class base functional componennt
+how the react words?
+
+
+
+  
+ 
+
+
+

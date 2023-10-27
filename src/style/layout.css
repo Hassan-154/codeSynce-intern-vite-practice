@@ -1,0 +1,10 @@
+.layout{
+    display: flex;
+    flex-wrap: warp;
+}
+.side{
+    flex-basis: 20%;
+}
+.head{
+    flex-basis: 80%;
+}
