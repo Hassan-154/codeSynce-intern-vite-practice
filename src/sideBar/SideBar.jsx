@@ -13,7 +13,7 @@ function SideBar() {
   }
  ]
   return (
-    <div className="sideBar">
+       <div className="sideNavMenu">
       {
         path.map( pick => (
          <ul key={pick}>
@@ -21,7 +21,6 @@ function SideBar() {
          </ul>
         ))
       }
-
     </div>
   );
 }

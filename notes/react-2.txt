@@ -2,6 +2,17 @@
   .split the screen
   .use padding instead of height
   .handle the sideNav and header with the flex
+- task 2*
+  .apply map on links
+- task 3*
+  .create login page
+  .make sure to add validation on placeholder using regex
+  .RegEx is used to check
+
+
+
+
+
 
 
 

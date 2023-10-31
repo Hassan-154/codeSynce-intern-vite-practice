@@ -1,0 +1,15 @@
+- react life cycle
+  .mounted, update, unmount
+   .mount
+    .when the component inserted into DOM
+   .update
+    .component update while present into DOM
+   .unmount
+    .when component removed from DOM.
+- react hook
+  .allow you to add state to component.
+- useEffect
+  .allow to perform side effect in your component.
+  noted: side effect should be separated from from rendering process.
+  .dependence array: when anything change in array the useeffect will apply side effect
+

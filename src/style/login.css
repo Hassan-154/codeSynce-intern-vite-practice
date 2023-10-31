@@ -29,10 +29,10 @@ label{
 }
 .input__field .input{
     background: none;
-    border: 1px solid white;
     outline: none;
     padding: 6px 4px;
     color: white;
+    border: 1px solid white;
 }
 .button__container{
     display: flex;
@@ -51,3 +51,20 @@ label{
     background-color: rgba(97, 97, 97, 0.515);
     cursor: pointer;
 }
+.hide{
+  opacity: 0.3;
+}
+.show{
+  opacity: 1;
+}
+.redOutline{
+  /* border: 1px solid red !important; */
+}
+.redOutline:focus{
+  border: 1px solid red;
+}
+.GreenOutline:focus{
+  border: 1px solid green;
+}
+
+
