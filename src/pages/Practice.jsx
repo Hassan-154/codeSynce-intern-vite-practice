@@ -1,29 +1,32 @@
 import React,{useEffect, useState} from 'react'
 
 function Practice() {
-    const  [state,setState]= useState(1)
+    const  [state,setState]= useState(0)
 
-    useEffect(()=>{
-            setState(state+1) //2
-            console.log( 'useEffect step 1: ' + state)
-            setState(state+1) //3
-            console.log( 'useEffect step 2: ' + state)
-            setState(state+1) //4
-            console.log( 'useEFfect step 3: ' + state)
-    },[])
+     useEffect(()=>{
+         setState(e => e + 1)
+         console.log( 'useState step 1: ' + state)
+
+         setState(e => e + 1)
+         console.log( 'useState step 2: ' + state)
+
+         setState(e => e + 1)
+         console.log( 'useState step 3: ' + state)
+     },[])
+     console.log(state)
 
     function add()
     {
-            setState(state+1)
-            console.log( 'useState step 1: ' + state)
+            //  setState(e => e + 1)
+            //  console.log( 'useState step 1: ' + state)
 
-            setState(state+1)
-            console.log( 'useState step 2: ' + state)
-           
-            setState(state+1)
-            console.log( 'useState step 3: ' + state)
+            //  setState(e => e + 1)
+            //  console.log( 'useState step 2: ' + state)
+
+            //  setState(e => e + 1)
+            //  console.log( 'useState step 3: ' + state)
     }
-  
+
 //     //to rest when component react rerender
 //     const [state, setState] = useState(2);
 
@@ -67,14 +70,14 @@ function Practice() {
   return (
     <div>
 {/* //      <button onClick={updateCount}>update count {count}</button>
-//      check the render method 
+//      check the render method
 //     <h1>heading</h1>
 //     <h1>current state: {state}</h1>
 //     <button onClick={render}>click to change state:</button>
-//     call function to change obj property value 
+//     call function to change obj property value
 //     <button onClick={changeOBJ}>Change OBJ</button> */}
          <button onClick={add} >add num</button>
-         <button onClick={add} >keep record</button>
+         {/* <button onClick={add} >keep record</button> */}
      </div>
   )
 }
