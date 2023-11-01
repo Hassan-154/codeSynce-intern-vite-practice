@@ -1,6 +1,11 @@
-- react life cycle
-  .mounted, update, unmount
-   .mount
+- DOM
+- Render
+  .process of displaying or updating the userinterface based on currect application state.
+  .create virtual representation of UI and then update to acutal dom.
+  .the rededer make sure that user that see on screen is the latest interface.
+- react life cycle.
+  .mounted, update, unmount 
+   .mount 
     .when the component inserted into DOM
    .update
     .component update while present into DOM
@@ -12,4 +17,4 @@
   .allow to perform side effect in your component.
   noted: side effect should be separated from from rendering process.
   .dependence array: when anything change in array the useeffect will apply side effect
-
+- chaange the object property value using useState.

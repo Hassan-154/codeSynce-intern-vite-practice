@@ -13,8 +13,12 @@ function LoginPage() {
     name:'filter',
     id:2
   })
-  console.log(state)
 
+
+
+  //changing the data in object called mutation
+  //we cant change the array directly.
+  //we create new copy of array than copy the data
 
   //email validation using regEx
   const emailPattern =

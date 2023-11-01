@@ -10,14 +10,23 @@ import LoginPage from './pages/LoginPage.jsx';
 import Layout from "./layout/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import Practice from "./pages/Practice";
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Navigate to="/login" />,
+  // },
+  // {
+  //   path: '/login',
+  //   element: <LoginPage/>
+  // },
   {
-    path: "/",
-    element: <Navigate to="/login" />,
+    path: '/',
+    element: <Navigate to='/practice'/>
   },
   {
-    path: '/login',
-    element: <LoginPage/>
+    path: '/practice',
+    element: <Practice/>
   },
   {
     path: "/layout",

@@ -1,0 +1,9 @@
+- show the component render/mahad
+- how the count = count + 1; is not work:
+  .because react dont rerender on local variabe changed thats why we use react js
+- we cant update state outside of any condition/ because we already declear the inital 
+- change object in useState ?
+  .object that exist in state should be read only
+- if we call multiple useState setter in function than what happend?
+  
+
