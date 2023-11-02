@@ -1,0 +1,17 @@
+- useEffect Hook
+  .let you synchronizing with external stystem
+  .like some non react component, sever conection, show analytics when a component apprear on screen.
+  .effects let you run some code after the rendering
+- how effects work
+  .by default your effect will run after every render.
+- useEffect run
+  .run on first render?
+  .run on every render?
+  .run on every render + when dependency change?
+  .cleanUp function?
+  .how to unamount with cleanUp?
+- why the effect will run twice?
+  .strict mode, ckecK twice if component render or not
+
+
+

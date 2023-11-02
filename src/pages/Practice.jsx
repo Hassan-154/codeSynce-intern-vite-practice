@@ -1,31 +1,69 @@
 import React,{useEffect, useState} from 'react'
 
 function Practice() {
-    const  [state,setState]= useState(0)
+    const  [count,setCount]= useState(0)
+    const  [windowWidth, setWindowWidth]= useState(window.innerWidth)
 
-     useEffect(()=>{
-         setState(e => e + 1)
-         console.log( 'useState step 1: ' + state)
-
-         setState(e => e + 1)
-         console.log( 'useState step 2: ' + state)
-
-         setState(e => e + 1)
-         console.log( 'useState step 3: ' + state)
-     },[])
-     console.log(state)
-
-    function add()
-    {
-            //  setState(e => e + 1)
-            //  console.log( 'useState step 1: ' + state)
-
-            //  setState(e => e + 1)
-            //  console.log( 'useState step 2: ' + state)
-
-            //  setState(e => e + 1)
-            //  console.log( 'useState step 3: ' + state)
+    
+    //this will run on every render
+   useEffect(()=>{
+    console.log('every render: ')
+    return () => {
+      console.log('I will run first: ')
     }
+   })
+
+   //I will run on first render
+   useEffect(()=>{
+    console.log('first render:')
+   }, [])
+
+   //on first render and when ever the dependence change
+   useEffect(()=>{
+    console.log('first render + dependency change: ' + count )
+   }, [count])
+
+   //cleanup in useState
+   useEffect(() => {
+    //here attach the listener
+    console.log('attach the listener: ')
+    window.addEventListener( 'resize', updateWindowWidth)
+    // return () => {
+    //   //remove the listener
+    //   console.log('detach the listener: ')
+    //   window.removeEventListener( 'resize', updateWindowWidth )
+    // };
+   },[]);
+
+   function updateWindowWidth() {
+    setWindowWidth(window.innerWidth)
+   }
+
+
+
+    //  useEffect(()=>{
+    //      setState(e => e + 1)
+    //      console.log( 'useState step 1: ' + state)
+
+    //      setState(e => e + 1)
+    //      console.log( 'useState step 2: ' + state)
+
+    //      setState(e => e + 1)
+    //      console.log( 'useState step 3: ' + state)
+    //  },[])
+    //  console.log(state)
+
+    // function add()
+    // {
+    //         //  setState(e => e + 1)
+    //         //  console.log( 'useState step 1: ' + state)
+
+    //         //  setState(e => e + 1)
+    //         //  console.log( 'useState step 2: ' + state)
+
+    //         //  setState(e => e + 1)
+    //         //  console.log( 'useState step 3: ' + state)
+    // }
 
 //     //to rest when component react rerender
 //     const [state, setState] = useState(2);
@@ -76,8 +114,13 @@ function Practice() {
 //     <button onClick={render}>click to change state:</button>
 //     call function to change obj property value
 //     <button onClick={changeOBJ}>Change OBJ</button> */}
-         <button onClick={add} >add num</button>
+
+<h1>Count: {count}</h1>
+<h1>Window width: {windowWidth}</h1>
+         <button onClick={ () => setCount(count+1) } >Increment</button>
+         <button onClick={ () => setCount(count-1) } >Decrement</button>
          {/* <button onClick={add} >keep record</button> */}
+         <h1></h1>
      </div>
   )
 }
