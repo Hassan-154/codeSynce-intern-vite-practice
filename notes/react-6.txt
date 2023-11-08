@@ -1,0 +1,18 @@
+- component life cycle
+  .A component mounts when it’s added to the screen.
+  .A component updates when it receives new props or state, usually in response to an interaction.
+   .when props come from parent
+   .when state change
+   .when the useEFfect apply side effect on our compponent.
+  .A component unmounts when it’s removed from the screen.
+   .the reason when the component unmount from the dom?
+    .if the parent compponent render and one of the child component will be unmount if the condition render remove that
+    .in (SPA)
+- Lifecycle of Reactive Effects
+- react can do multiple times synchronizing and stop synchronizing when component remain mounted
+  .some effects dont need cleanUp function at all.
+  .if we dont define any cleanUp function than react add a empty cleanUp
+- How React re-synchronizes your Effect 
+- useMemo
+  .let you cache the result between rerender
+  .to increase the performance our react application

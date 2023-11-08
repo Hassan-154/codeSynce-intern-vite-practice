@@ -1,0 +1,7 @@
+- react nature ?
+- when component render/ on which condition in which component render
+- component life cycle ?
+- boolen data type show in the html ? 
+- all array method
+- all string method
+- all object method

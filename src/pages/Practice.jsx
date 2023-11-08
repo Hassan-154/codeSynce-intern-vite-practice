@@ -4,7 +4,6 @@ function Practice() {
     const  [count,setCount]= useState(0)
     const  [windowWidth, setWindowWidth]= useState(window.innerWidth)
 
-    
     //this will run on every render
    useEffect(()=>{
     console.log('every render: ')
@@ -38,8 +37,6 @@ function Practice() {
    function updateWindowWidth() {
     setWindowWidth(window.innerWidth)
    }
-
-
 
     //  useEffect(()=>{
     //      setState(e => e + 1)
@@ -107,6 +104,8 @@ function Practice() {
 
   return (
     <div>
+
+
 {/* //      <button onClick={updateCount}>update count {count}</button>
 //      check the render method
 //     <h1>heading</h1>

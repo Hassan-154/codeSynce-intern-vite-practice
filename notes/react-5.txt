@@ -11,7 +11,7 @@
   .cleanUp function?
   .how to unamount with cleanUp?
 - why the effect will run twice?
-  .strict mode, ckecK twice if component render or not
+  .strict mode, ckecK twice if there is an error or not
 
 
 

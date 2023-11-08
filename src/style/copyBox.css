@@ -1,0 +1,23 @@
+.copyBox{
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; 
+}
+.copyBox .item{
+    text-align: center;
+}
+.copyBox .item ul li{
+    margin: 15px 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+label{
+    margin-left: 6px;
+}
+
+.copyBox .box{
+    border: 1px solid black;
+}

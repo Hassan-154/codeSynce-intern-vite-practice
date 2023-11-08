@@ -6,11 +6,15 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import LoginPage from './pages/LoginPage.jsx';
+// import LoginPage from './pages/LoginPage.jsx';
 import Layout from "./layout/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Practice from "./pages/Practice";
+// import Practice from "./pages/Practice";
+//import LifeCycle from "./TaskCollection/LifeCycle.jsx";
+import FilterApi from './TaskCollection/FilterApi.jsx'
+import CopyBOx from "./TaskCollection/CopyBox.jsx";
+import CopyBoxWithCheck from "./TaskCollection/CopyBoxWithCheck.jsx";
 const router = createBrowserRouter([
   // {
   //   path: "/",
@@ -20,13 +24,17 @@ const router = createBrowserRouter([
   //   path: '/login',
   //   element: <LoginPage/>
   // },
+  // {
+  //   path: '/',
+  //   element: <Navigate to='/practice'/>
+  // },
+  // {
+  //   path: '/practice',
+  //   element: <Practice/>
+  // },
   {
     path: '/',
-    element: <Navigate to='/practice'/>
-  },
-  {
-    path: '/practice',
-    element: <Practice/>
+    element: <CopyBoxWithCheck/>
   },
   {
     path: "/layout",

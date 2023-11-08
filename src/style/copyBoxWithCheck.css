@@ -1,0 +1,41 @@
+.copyBoxWithCheck{
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; 
+    text-align: center;
+}
+.moveButton button{
+    width: 150px;
+    height: 50px;
+    background-color: #691fab;
+    color: white;
+    font-size: 16px;
+}
+.moveButton button:hover{
+    background-color: rgb(136, 49, 213);
+    cursor: pointer;
+}
+.moveButtonDisable button{
+    width: 150px;
+    height: 50px;
+    font-size: 19px;
+}
+.box-check{
+    border: 1px solid black;
+    padding: 10px;
+}
+.check-field{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.check-field input{
+    cursor: pointer;
+    transform: scale(1.2)
+}
+.check-field p{
+    margin-left: 4px;
+}
