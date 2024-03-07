@@ -1,0 +1,74 @@
+- react nature ?
+- when component render/ on which condition in which component render
+- component life cycle ?
+- boolen data type show in the html ?
+- all array method
+- all string method
+- all object method
+
+
+
+import React,{useState} from 'react'
+import '../style/copyBox.css'
+function CopyBox() {
+    const [box1, setBox1] = useState([1,2,3,4,5]);
+    const [box2, setBox2] = useState([]);
+    const [isChecked, setIsChecked] = useState(false);
+
+    function selectItemBox1(item)
+    {
+        //move item to box 2
+        setBox2([...box2,item])
+        //now remove that item
+        setBox1(box1.filter((boxItem) => boxItem !== item))
+    }
+
+    function selectItemBox2(item)
+    {
+        //move item to box 1
+        setBox1([...box1,item])
+        //now remove that item
+        setBox2(box2.filter((boxItem) => boxItem !== item))
+    }
+
+    
+    const handleOnChange = () => {
+        setIsChecked(!isChecked);
+        console.log(isChecked)
+      };
+    
+  return (
+    <div className='copyBox'>
+    {/* container 1 */}
+    {/* box 1 */}
+    <div className='item box'>
+    <input type='checkbox'checked={isChecked} onChange={handleOnChange} />
+    <ul>
+        {box1.map((item) => (
+            <li key={item}>
+            <input onClick={()=> selectItemBox1(item)} type="checkbox"/>
+            <label >{item}</label>
+            </li>
+        ))}
+    </ul>
+    </div>
+    {/* button 1 */}
+    <div className='item'><button>button 1</button></div>
+    {/* button 2 */}
+    <div className='item'><button>button 2</button></div>
+    {/* container 2 */}
+    <div className='item box'>
+    <ul>
+        {box2.map((item) => (
+            <li key={item}>
+            <input onClick={()=> selectItemBox2(item)}  type="checkbox"/>
+            <label>{item}</label>
+            </li>
+        ))}
+    </ul>
+    </div>
+    </div>
+  )
+}
+
+export default CopyBox

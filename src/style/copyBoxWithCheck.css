@@ -25,17 +25,20 @@
 }
 .box-check{
     border: 1px solid black;
-    padding: 10px;
 }
 .check-field{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 15px;
 }
 .check-field input{
     cursor: pointer;
-    transform: scale(1.2)
+    transform: scale(1.3)
 }
 .check-field p{
-    margin-left: 4px;
+    margin-left: 6px;
+}
+.move button{
+    padding: 15px 25px;
+    cursor: pointer;
 }
